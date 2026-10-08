@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme{
+    --font-body: 'Poppins', sans-serif;
+};
+
+
+@layer base{
+    body{
+        font-family:var(--font-body)
+    }
+};
+
+
+@layer compoments{
+    .btn{
+        @apply py-2 px-6 rounded-2xl border font-bold bg-zinc-200 hover:bg-blue-400 hover:text-white transition-all my-4;
+    }
+
+    .label{
+        @apply font-bold;
+    }
+
+    h1{
+        @apply font-bold text-3xl;
+    }
+    .input{
+        @apply border rounded-lg py-2 px-4 my-2;
+    }
+};
