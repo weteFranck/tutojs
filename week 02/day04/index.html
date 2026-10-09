@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../src/output.css">
+    <title>Gerer Mieux Vos Taches</title>
+</head>
+
+<body>
+    <div>
+
+        <div class="border w-200 items-center justify-center mx-auto my-4 py-2 px-4">
+
+            <h1 class="mb-8">Mes Taches Quotidiennes</h1>
+
+            <div>
+                <button class="font-bold text-center text-2xl decoration-line: underline p-2 hover:text-green-600" id="create-task" type="button">
+                    Creer une tache
+                </button>
+            </div>
+
+            <div class="my-10">
+                <form class="bg-orange-500 py-6 px-4 rounded-2xl " style="display: none;" id="create-task-form" action="">
+
+                    <div class="px-4 rounded-2xl my-4 grid gap-4 justify-between">
+
+                        <div class="flex items-center justify-between mb-10">
+                            <div>
+                                <label class="font-semibold" for="task-title">Titre de la tache :</label>
+                                <input class="border bg-blue-50 w-70" type="text" id="task-title"
+                                    placeholder="Entrez le titre de la tache"><br>
+
+                            </div>
+
+                            <div>
+                                <label class="font-semibold" for="task-date p-2">Priorité:</label>
+                                <select class="border bg-blue-50" id="task-priority">
+                                    <option value="faible">Moin Important</option>
+                                    <option value="moyenne">Importante</option>
+                                    <option value="haute">Très Important</option>
+                                </select><br>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-center justify-between mb-10">
+                            <div>
+                                <label class="font-semibold" for="task-date">Date :</label>
+                                <input class="border bg-blue-50 ml-22" type="date" id="task-date"
+                                    placeholder="Entrez la date de la tache"><br>
+
+                            </div>
+
+                            <div>
+                                <label class="font-semibold -ml-22" for="task-hour">Heure :</label>
+                                <input class="border bg-blue-50" type="time" id="task-hour"
+                                    placeholder="Entrez l'heure de la tache"><br>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex  items-center gap-2 mb-10">
+                            <label class="font-semibold" for="task-description">Description de la tache :</label>
+                            <textarea class="border bg-blue-50 -mb-10 w-70" name="task-description"
+                                id="task-description" placeholder="Entrez la description de la tache"></textarea><br>
+
+                        </div>
+
+                        <div class="flex justify-end gap-4 w-full">
+                            <button class="btn-primary" type="submit" id="save-task">Enregistrer</button>
+                            <button class="btnn" type="reset" id="reset-task">Annuler</button>
+                        </div>
+                    </div>        
+
+
+                </form>
+            </div>
+
+            <div class="my-6">
+                <button class="btn-secondary" type="button" id="see-tasks">Voir les taches</button>
+            </div>
+
+            <table class="table-auto border-collapse border">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2">Taches </th>
+                        <th class="px-4 py-2">Description </th>
+                        <th class="px-4 py-2">Priorité </th>
+                        <th class="px-4 py-2">Statut </th>
+                        <th class="px-4 py-2">Date </th>
+                        <th class="px-4 py-2">Heure </th>
+                        <th class="px-4 py-2">Action </th>
+                    </tr>
+                </thead>
+
+                <tbody id="contenue">
+                    <tr>
+                        <td class="border px-4 py-2 text-center"><input type="checkbox" id="selectAll">gjh</td>
+                        <td class="border px-4 py-2 text-center">gjh</td>
+                        <td class="border px-4 py-2 text-center">gjh</td>
+                        <td class="border px-4 py-2 text-center">gjh</td>
+                        <td class="border px-4 py-2 text-center">gjh</td>
+                        <td class="border px-4 py-2 text-center">gjh</td>
+                        <td class="border px-4 py-2 text-center">
+                            <button class="bg-blue-500 text-white px-2 py-1 rounded">Modifier</button>
+                            <button class="bg-red-500 text-white px-2 py-1 rounded">Supprimer</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="flex justify-center my-8">
+                <button class="btn-secondary" type="submit" id="add-task">Ajouter taches</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
