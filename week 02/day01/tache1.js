@@ -29,7 +29,7 @@ function temperature() {
         alert ('votre temperature de fahrenheit a celsuis  :' + c);
             
 }
-// temperature()       
+temperature()       
 
 
 
